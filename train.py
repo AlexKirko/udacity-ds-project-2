@@ -10,7 +10,8 @@ import time
 import math
 import numpy as np
 
+from netsettings import net_archs, net_classes, net_prefixes, net_params
 
 # main training code
 if __name__ == '__main__':
-    pass
+    print(net_archs)
