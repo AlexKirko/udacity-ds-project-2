@@ -29,12 +29,15 @@ if __name__ == '__main__':
                         help="""Number of epochs to train the model.""")
     parser.add_argument('--save_filename', type=str,
                         help="""Name for the checkpoint file.""")
+    parser.add_argument('--device', type=str, default='cpu',
+                        help="""Device on which to evaluate the model.""")
     args = parser.parse_args()
     
     model_name = args.model_name
     learning_rate = args.learning_rate
     classifier_hidden = args.hidden_units
     epochs = args.training_epochs
+    device = args.device
     if args.save_filename is None:
         save_filename = net_prefixes[model_name] + 'checkpoint.pth'
     else:
