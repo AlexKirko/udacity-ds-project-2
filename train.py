@@ -266,3 +266,5 @@ if __name__ == '__main__':
     }
 
     torch.save(checkpoint, save_filename)
+    
+    print('Model saved to ' + save_filename)
