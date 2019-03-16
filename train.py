@@ -10,3 +10,7 @@ import time
 import math
 import numpy as np
 
+
+# main training code
+if __name__ == '__main__':
+    pass
